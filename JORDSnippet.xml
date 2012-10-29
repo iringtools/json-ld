@@ -1,0 +1,93 @@
+
+<!--Template Definition - AssemblyOfIndividual-->
+<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R65141162308">
+	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R44102076948" />
+	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R54167847248" />
+	<ns1:valNumberOfRoles rdf:datatype="xsd:integer">2</ns1:valNumberOfRoles>
+	<rdfs:comment xml:lang="en">Proto-templatefromPart7</rdfs:comment>
+	<rdfs:label xml:lang="en">AssemblyOfIndividualTemplate</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#BaseTemplateStatement" />
+</ns0:Thing>
+
+<!--Role Definition - hasPart-->
+<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R44102076948">
+	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R65141162308" />
+	<ns1:valRoleIndex rdf:datatype="xsd:integer">1</ns1:valRoleIndex>
+	<rdfs:label xml:lang="en">hasPart</rdfs:label>
+</rdf:Description>
+
+<!--Role Definition - hasWhole-->
+<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R54167847248">
+	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ArrangedIndividual" />
+	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R65141162308" />
+	<ns1:valRoleIndex rdf:datatype="xsd:integer">2</ns1:valRoleIndex>
+	<rdfs:label xml:lang="en">hasWhole</rdfs:label>
+</rdf:Description>
+
+<!--Piping Network Segment-->
+<part2:ClassOfInanimatePhysicalObject rdf:about="#RDS267704">
+	<rdl:hasIdPCA>RDS267704</rdl:hasIdPCA>
+	<rdfs:label>PIPING NETWORK SEGMENT</rdfs:label>
+	<rdl:hasDesignation>PIPING NETWORK SEGMENT</rdl:hasDesignation>
+	<rdl:hasDefinition>The piping limited by a Node and a Break, Node and Connector,  two Nodes, two Breaks, two Connectors or a Break and a Connector. The last five providing there are no Breaks or Connectors in between. In the last three cases the Segment will coincide with a Piping Branch.</rdl:hasDefinition>
+	<rdl:hasStatus>Recorded</rdl:hasStatus>
+	<rdl:hasDesignationAbbrev>470600</rdl:hasDesignationAbbrev>
+	<rdl:hasCreator>u82237</rdl:hasCreator>
+	<rdl:hasCreationDate>1995.10.23</rdl:hasCreationDate>
+</part2:ClassOfInanimatePhysicalObject>
+
+<!--Fluid Stream-->
+<part2:ClassOfArrangedIndividual rdf:about="#RDS14197042">
+   <rdl:hasIdPCA>RDS14197042</rdl:hasIdPCA>
+   <rdfs:label>FLUID STREAM</rdfs:label>
+   <rdl:hasDesignation>FLUID STREAM</rdl:hasDesignation>
+   <rdl:hasDefinition>A stream of fluid.</rdl:hasDefinition>
+   <rdl:hasStatus>Recorded</rdl:hasStatus>
+   <rdl:hasCreator>u83140</rdl:hasCreator>
+   <rdl:hasCreationDate>2003.11.03</rdl:hasCreationDate>
+</part2:ClassOfArrangedIndividual>
+
+<!--Template Definition - IndirectPropertyScaleReal-->
+<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R33612674560">
+	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R10528152386" />
+	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R11450580697" />
+	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R56806886394" />
+	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R65789235245" />
+	<ns1:valNumberOfRoles rdf:datatype="xsd:integer">4</ns1:valNumberOfRoles>
+	<rdfs:comment xml:lang="en">TemplatefromPart7Initialset</rdfs:comment>
+	<rdfs:label xml:lang="en">IndirectPropertyScaleReal</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#BaseTemplateStatement" />
+</ns0:Thing>
+
+<!--Base Role - hasScale-->
+<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R10528152386">
+	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#Scale" />
+	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<ns1:valRoleIndex rdf:datatype="xsd:integer">4</ns1:valRoleIndex>
+	<rdfs:label xml:lang="en">hasScale</rdfs:label>
+</rdf:Description>
+
+<!--Base Role - hasPossessor-->
+<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R11450580697">
+	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<ns1:valRoleIndex rdf:datatype="xsd:integer">2</ns1:valRoleIndex>
+	<rdfs:label xml:lang="en">hasPossessor</rdfs:label>
+</rdf:Description>
+
+<!--Base Role - hasType-->
+<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R56806886394">
+	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ClassOfIndirectProperty" />
+	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<ns1:valRoleIndex rdf:datatype="xsd:integer">1</ns1:valRoleIndex>
+	<rdfs:label xml:lang="en">hasType</rdfs:label>
+</rdf:Description>
+
+<!--Base Role - valValue-->
+<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R65789235245">
+	<ns1:hasRoleFillerType rdf:resource="&xsd;double" />
+	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<ns1:valRoleIndex rdf:datatype="xsd:integer">3</ns1:valRoleIndex>
+	<rdfs:label xml:lang="en">valValue</rdfs:label>
+</rdf:Description>

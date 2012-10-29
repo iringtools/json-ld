@@ -1,0 +1,36 @@
+<!--Template Definition - ClassifiedContainmentOfIndividual-->
+<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R86335405743">
+	<ns2:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R22381561900" />
+	<ns2:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R35530988154" />
+	<ns2:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R38033821577" />
+	<ns2:valNumberOfRoles rdf:datatype="xsd:integer">3</ns2:valNumberOfRoles>
+	<rdfs:label xml:lang="en">ClassifiedContainmentOfIndividual</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#BaseTemplateStatement" />
+</ns0:Thing>
+
+<!--Role Definition - hasContainer-->
+<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R22381561900">
+	<ns2:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+	<ns2:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
+	<ns2:valRoleIndex rdf:datatype="xsd:integer">2</ns2:valRoleIndex>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<rdfs:label xml:lang="en">hasContainer</rdfs:label>
+</ns0:Thing>
+
+<!--Role Definition - hasContainmentType-->
+<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R35530988154">
+	<ns2:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ClassOfContainmentOfIndividual" />
+	<ns2:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
+	<ns2:valRoleIndex rdf:datatype="xsd:integer">3</ns2:valRoleIndex>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<rdfs:label xml:lang="en">hasContainmentType</rdfs:label>
+</ns0:Thing>
+
+<!--Role Definition - hasContained-->
+<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R38033821577">
+	<ns2:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+	<ns2:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
+	<ns2:valRoleIndex rdf:datatype="xsd:integer">1</ns2:valRoleIndex>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<rdfs:label xml:lang="en">hasContained</rdfs:label>
+</ns0:Thing>
