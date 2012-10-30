@@ -1,15 +1,61 @@
 <!--TIP Definition - Design Pressure-->
-<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#Rcaab4ef5-1d7e-4f6a-aa50-bfd4b130eff2">
-	<ns1:hasParameter rdf:resource="http://tpl.rdlfacade.org/data#R9d0c2b0b-6bf7-4a2c-8ff0-1b8d9d33959c" />
-	<ns1:hasParameter rdf:resource="http://tpl.rdlfacade.org/data#R0fbd3e18-9fdd-4058-90f7-e7fa4b382902" />
-	<ns1:valNumberOfParameters rdf:datatype="xsd:integer">2</ns1:valNumberOfRoles>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#Rcaab4ef5-1d7e-4f6a-aa50-bfd4b130eff2">
 	<rdfs:label xml:lang="en">Design Pressure</rdfs:label>
 	<rdfs:subClassOf rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/tip-model#TemplatePatternStatement" />
-</ns0:Thing>
+	<tipm:valNumberOfParameters rdf:datatype="xsd:integer">2</tipm:valNumberOfRoles>
+	<tipm:hasParameter rdf:resource="http://tpl.rdlfacade.org/data#R9d0c2b0b-6bf7-4a2c-8ff0-1b8d9d33959c" />
+	<tipm:hasParameter rdf:resource="http://tpl.rdlfacade.org/data#R0fbd3e18-9fdd-4058-90f7-e7fa4b382902" />
+</owl:Thing>
 
-2ac1b636-5ac0-40ed-8dd0-0874badc2307
-b456facb-bced-4dd4-9cae-dddc4b582cb3
-88e07774-263e-48cd-b1b0-25045372121a
+<!--Pre-Ordinal-->
+
+<!--Pattern Definition - designPressure-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R9d0c2b0b-6bf7-4a2c-8ff0-1b8d9d33959c">
+	<rdfs:label xml:lang="en">designPressure</rdfs:label>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateParameterDescription" />
+	<tipm:hasPattern rdf:resources="http://tpl.rdlfacade.org/data#Rcaab4ef5-1d7e-4f6a-aa50-bfd4b130eff2" />
+	<tipm:valParameterIndex rdf:datatype="xsd:integer">0</tipm:valParameterIndex>
+</owl:Thing>
+
+<!--Pattern Definition - designPressureScale-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R0fbd3e18-9fdd-4058-90f7-e7fa4b382902">
+	<rdfs:label xml:lang="en">designPressureScale</rdfs:label>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateParameterDescription" />
+	<tipm:hasPattern rdf:resources="http://tpl.rdlfacade.org/data#Rcaab4ef5-1d7e-4f6a-aa50-bfd4b130eff2" />
+	<tipm:valParameterIndex rdf:datatype="xsd:integer">1</tipm:valParameterIndex>
+</owl:Thing>
+
+<!--Post-Ordinal-->
+
+<!--Ordinal Definition - 0-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R2ac1b636-5ac0-40ed-8dd0-0874badc2307">
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateOrdinalDescription" />
+	<tipm:hasPattern rdf:resources="http://tpl.rdlfacade.org/data#Rcaab4ef5-1d7e-4f6a-aa50-bfd4b130eff2" />
+	<!--first ordinal cannot have IndividualType-->
+	<tipm:valOrdinalIndex rdf:datatype="xsd:integer">0</tipm:valOrdinalIndex>
+	<tipm:hasOrdinalTemplate rdf:resources="http://tpl.rdlfacade.org/data#R65141162308" /> <!--AssemblyOfIndividual-->
+	<!--PosessorRole-->
+</owl:Thing>
+
+<!--Ordinal Definition - 1-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#Rb456facb-bced-4dd4-9cae-dddc4b582cb3">
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateOrdinalDescription" />
+	<tipm:hasPattern rdf:resources="http://tpl.rdlfacade.org/data#Rcaab4ef5-1d7e-4f6a-aa50-bfd4b130eff2" />
+	<tipm:hasIndividualType rdf:resources="http://rdl.rdlfacade.org/data#R58701958436" /> <!--Piping Network Segment-->
+	<tipm:valOrdinalIndex rdf:datatype="xsd:integer">1</tipm:valOrdinalIndex>
+	<tipm:hasOrdinalTemplate rdf:resources="http://tpl.rdlfacade.org/data#R86335405743" /> <!--ClassifiedContainmentOfIndividual-->
+</owl:Thing>
+
+<!--Ordinal Definition - 2-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R88e07774-263e-48cd-b1b0-25045372121a">
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateOrdinalDescription" />
+	<tipm:hasPattern rdf:resources="http://tpl.rdlfacade.org/data#Rcaab4ef5-1d7e-4f6a-aa50-bfd4b130eff2" />
+	<tipm:hasIndividualType rdf:resources="http://rdl.rdlfacade.org/data#R35385587762" /> <!--Fluid Stream-->
+	<tipm:valOrdinalIndex rdf:datatype="xsd:integer">2</tipm:valOrdinalIndex>
+	<tipm:hasOrdinalTemplate rdf:resources="http://tpl.rdlfacade.org/data#R33612674560" /> <!--IndirectPropertyScaleReal-->
+</owl:Thing>
+
+
 655583da-c31a-4b9b-9bc1-44a9dfeac96d
 749e161b-2462-4916-b864-858d2a6f099e
 6c359722-0b5b-4da7-955c-00fff6eab75a

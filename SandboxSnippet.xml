@@ -1,36 +1,38 @@
+<rdf:RDF xml:base="dotnetrdf:default-graph" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:tpm="http://standards.tc184-sc4.org/iso/15926/-8/template-model#" xmlns:tipm="http://standards.tc184-sc4.org/iso/15926/-8/tip-model#" xmlns:part2="http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#">
+
 <!--Template Definition - ClassifiedContainmentOfIndividual-->
-<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R86335405743">
-	<ns2:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R22381561900" />
-	<ns2:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R35530988154" />
-	<ns2:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R38033821577" />
-	<ns2:valNumberOfRoles rdf:datatype="xsd:integer">3</ns2:valNumberOfRoles>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R86335405743">
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R22381561900" />
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R35530988154" />
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R38033821577" />
+	<tpm:valNumberOfRoles rdf:datatype="xsd:integer">3</tpm:valNumberOfRoles>
 	<rdfs:label xml:lang="en">ClassifiedContainmentOfIndividual</rdfs:label>
 	<rdfs:subClassOf rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#BaseTemplateStatement" />
-</ns0:Thing>
+</owl:Thing>
 
 <!--Role Definition - hasContainer-->
-<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R22381561900">
-	<ns2:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
-	<ns2:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
-	<ns2:valRoleIndex rdf:datatype="xsd:integer">2</ns2:valRoleIndex>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R22381561900">
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">2</tpm:valRoleIndex>
 	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
 	<rdfs:label xml:lang="en">hasContainer</rdfs:label>
-</ns0:Thing>
+</owl:Thing>
 
 <!--Role Definition - hasContainmentType-->
-<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R35530988154">
-	<ns2:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ClassOfContainmentOfIndividual" />
-	<ns2:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
-	<ns2:valRoleIndex rdf:datatype="xsd:integer">3</ns2:valRoleIndex>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R35530988154">
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ClassOfContainmentOfIndividual" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">3</tpm:valRoleIndex>
 	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
 	<rdfs:label xml:lang="en">hasContainmentType</rdfs:label>
-</ns0:Thing>
+</owl:Thing>
 
 <!--Role Definition - hasContained-->
-<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R38033821577">
-	<ns2:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
-	<ns2:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
-	<ns2:valRoleIndex rdf:datatype="xsd:integer">1</ns2:valRoleIndex>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R38033821577">
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R86335405743" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">1</tpm:valRoleIndex>
 	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
 	<rdfs:label xml:lang="en">hasContained</rdfs:label>
-</ns0:Thing>
+</owl:Thing>

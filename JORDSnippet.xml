@@ -1,32 +1,36 @@
+<rdf:RDF xml:base="dotnetrdf:default-graph" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:tpm="http://standards.tc184-sc4.org/iso/15926/-8/template-model#" xmlns:tipm="http://standards.tc184-sc4.org/iso/15926/-8/tip-model#" xmlns:part2="http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#">
 
 <!--Template Definition - AssemblyOfIndividual-->
-<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R65141162308">
-	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R44102076948" />
-	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R54167847248" />
-	<ns1:valNumberOfRoles rdf:datatype="xsd:integer">2</ns1:valNumberOfRoles>
-	<rdfs:comment xml:lang="en">Proto-templatefromPart7</rdfs:comment>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R65141162308">
 	<rdfs:label xml:lang="en">AssemblyOfIndividualTemplate</rdfs:label>
 	<rdfs:subClassOf rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#BaseTemplateStatement" />
-</ns0:Thing>
+	<rdfs:comment xml:lang="en">Proto-templatefromPart7</rdfs:comment>
+	<tpm:valNumberOfRoles rdf:datatype="xsd:integer">2</tpm:valNumberOfRoles>
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R44102076948" />
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R54167847248" />
+</owl:Thing>
 
 <!--Role Definition - hasPart-->
-<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R44102076948">
-	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
-	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R65141162308" />
-	<ns1:valRoleIndex rdf:datatype="xsd:integer">1</ns1:valRoleIndex>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R44102076948">
 	<rdfs:label xml:lang="en">hasPart</rdfs:label>
-</rdf:Description>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R65141162308" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">1</tpm:valRoleIndex>
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+</owl:Thing>
 
 <!--Role Definition - hasWhole-->
-<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R54167847248">
-	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ArrangedIndividual" />
-	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R65141162308" />
-	<ns1:valRoleIndex rdf:datatype="xsd:integer">2</ns1:valRoleIndex>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R54167847248">
 	<rdfs:label xml:lang="en">hasWhole</rdfs:label>
-</rdf:Description>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R65141162308" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">2</tpm:valRoleIndex>
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ArrangedIndividual" />
+</owl:Thing >
 
 <!--Piping Network Segment-->
 <part2:ClassOfInanimatePhysicalObject rdf:about="#RDS267704">
+	<rdf:about rdf:resource="http://rdl.rdlfacade.org/data#R58701958436" />
 	<rdl:hasIdPCA>RDS267704</rdl:hasIdPCA>
 	<rdfs:label>PIPING NETWORK SEGMENT</rdfs:label>
 	<rdl:hasDesignation>PIPING NETWORK SEGMENT</rdl:hasDesignation>
@@ -39,6 +43,7 @@
 
 <!--Fluid Stream-->
 <part2:ClassOfArrangedIndividual rdf:about="#RDS14197042">
+   <rdf:about rdf:resource="http://rdl.rdlfacade.org/data#R35385587762" />
    <rdl:hasIdPCA>RDS14197042</rdl:hasIdPCA>
    <rdfs:label>FLUID STREAM</rdfs:label>
    <rdl:hasDesignation>FLUID STREAM</rdl:hasDesignation>
@@ -49,45 +54,52 @@
 </part2:ClassOfArrangedIndividual>
 
 <!--Template Definition - IndirectPropertyScaleReal-->
-<ns0:Thing rdf:about="http://tpl.rdlfacade.org/data#R33612674560">
-	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R10528152386" />
-	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R11450580697" />
-	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R56806886394" />
-	<ns1:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R65789235245" />
-	<ns1:valNumberOfRoles rdf:datatype="xsd:integer">4</ns1:valNumberOfRoles>
-	<rdfs:comment xml:lang="en">TemplatefromPart7Initialset</rdfs:comment>
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R33612674560">
 	<rdfs:label xml:lang="en">IndirectPropertyScaleReal</rdfs:label>
 	<rdfs:subClassOf rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#BaseTemplateStatement" />
-</ns0:Thing>
+	<rdfs:comment xml:lang="en">TemplatefromPart7Initialset</rdfs:comment>
+	<tpm:valNumberOfRoles rdf:datatype="xsd:integer">4</tpm:valNumberOfRoles>
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R10528152386" />
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R11450580697" />
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R56806886394" />
+	<tpm:hasRole rdf:resource="http://tpl.rdlfacade.org/data#R65789235245" />
+</owl:Thing>
 
-<!--Base Role - hasScale-->
-<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R10528152386">
-	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#Scale" />
-	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
-	<ns1:valRoleIndex rdf:datatype="xsd:integer">4</ns1:valRoleIndex>
-	<rdfs:label xml:lang="en">hasScale</rdfs:label>
-</rdf:Description>
-
-<!--Base Role - hasPossessor-->
-<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R11450580697">
-	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
-	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
-	<ns1:valRoleIndex rdf:datatype="xsd:integer">2</ns1:valRoleIndex>
-	<rdfs:label xml:lang="en">hasPossessor</rdfs:label>
-</rdf:Description>
-
-<!--Base Role - hasType-->
-<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R56806886394">
-	<ns1:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ClassOfIndirectProperty" />
-	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
-	<ns1:valRoleIndex rdf:datatype="xsd:integer">1</ns1:valRoleIndex>
+<!--Role Definition - hasType-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R56806886394">
 	<rdfs:label xml:lang="en">hasType</rdfs:label>
-</rdf:Description>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">1</tpm:valRoleIndex>
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#ClassOfIndirectProperty" />
+</owl:Thing>
 
-<!--Base Role - valValue-->
-<rdf:Description rdf:about="http://tpl.rdlfacade.org/data#R65789235245">
-	<ns1:hasRoleFillerType rdf:resource="&xsd;double" />
-	<ns1:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
-	<ns1:valRoleIndex rdf:datatype="xsd:integer">3</ns1:valRoleIndex>
+<!--Role Definition - hasPossessor-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R11450580697">
+	<rdfs:label xml:lang="en">hasPossessor</rdfs:label>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">2</tpm:valRoleIndex>
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#PossibleIndividual" />
+</owl:Thing>
+
+<!--Role Definition - valValue-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R65789235245">
 	<rdfs:label xml:lang="en">valValue</rdfs:label>
-</rdf:Description>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+	<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">3</tpm:valRoleIndex>
+	<tpm:hasRoleFillerType rdf:resource="&xsd;double" />
+	
+</owl:Thing>
+
+<!--Role Definition - hasScale-->
+<owl:Thing rdf:about="http://tpl.rdlfacade.org/data#R10528152386">
+	<rdfs:label xml:lang="en">hasScale</rdfs:label>
+	<rdf:type rdf:resource="http://standards.tc184-sc4.org/iso/15926/-8/template-model#TemplateRoleDescription" />
+		<tpm:hasTemplate rdf:resource="http://tpl.rdlfacade.org/data#R33612674560" />
+	<tpm:valRoleIndex rdf:datatype="xsd:integer">4</tpm:valRoleIndex>
+	<tpm:hasRoleFillerType rdf:resource="http://dm.rdlfacade.org/data#Scale" />
+</owl:Thing>
+
+</rdf:RDF>
